@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: mailto:security@zenstaff.app
+    about: Report it privately, never in a public issue.
+  - name: The desktop app
+    url: https://github.com/ZenStaff/zenstaff/issues
+    about: Problems with the Zen Staff app itself.
+  - name: Commercial support
+    url: mailto:support@zenstaff.app
+    about: Hosted plan, setup done for you, contracts.

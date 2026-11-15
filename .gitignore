@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+backups/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+node_modules/
+__pycache__/

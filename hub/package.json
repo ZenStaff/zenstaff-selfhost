@@ -1,0 +1,33 @@
+{
+  "name": "zen-hub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Zen Staff hub: accounts, companies, invitations, runner relay and chat sharing. Agents never run here.",
+  "type": "module",
+  "license": "SEE LICENSE IN ../LICENSE.md",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "dev": "node --watch src/server.ts",
+    "test": "node --test --test-reporter=spec 'test/**/*.test.ts'",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint --deny-warnings src test",
+    "check": "npm run typecheck && npm run lint && npm test",
+    "audit:verify": "node src/auditVerify.ts"
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "14.0.3",
+    "nodemailer": "10.2.1",
+    "ws": "8.22.1"
+  },
+  "devDependencies": {
+    "@simplewebauthn/browser": "14.0.0",
+    "@types/node": "24.10.1",
+    "@types/nodemailer": "8.0.2",
+    "@types/ws": "8.18.1",
+    "oxlint": "1.29.0",
+    "typescript": "5.9.3"
+  }
+}
